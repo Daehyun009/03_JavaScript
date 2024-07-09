@@ -146,13 +146,38 @@
   <hr>
   <h1>CSS 선택자를 이용한 요소 접근 방법</h1>
 
-    <!-- target-div 속성은 만들어낸 속성 (기본 속성 X) -->
-  <div target-div = "css-div"> 
+  <!-- target-div 속성은 만들어낸 속성 (기본 속성 X) -->
+  <div target-div="css-div">
     <div>test1</div>
     <div>test2</div>
   </div>
 
   <button onclick="cssTest1()">CSS 선택자로 요소 접근</button>
+
+  <hr>
+  <h3>카카오톡 모양의 채팅 화면 만들기</h3>
+
+  <div class="chatting">
+
+    <!-- 채팅이 표시되는 화면 -->
+    <div id="chattingBackground">
+      <p>
+      <span>입력된 내용 출력</span>
+      </p>
+      <p>
+      <span>입력된 내용 출력</span>
+      </p>
+    </div>
+   
+
+    <!-- 채팅 입력 영역 -->
+    <div id="chattingInput">
+      <input type="text" id="userInput">
+      <button onclick="readValue()">입력</button>
+    </div>
+
+  </div>
+
 
 
   <script src="../JS/11_요소접근방법.js"></script>

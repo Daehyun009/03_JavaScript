@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100px;
+  width: 400px;
+  border: 4px solid black;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+.container>div {
+  height: 80px;
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 28px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-size: cover;
+  background-position: center;
+}
+
+#cursorImage {
+  /* 
+    이미지의 width / height 중 한 방향만 지정하면
+    나머지 방향은 같은 비율로 조정됨
+  */
+  width: 30px;
+
+  /* 다른 요소와 겹칠 수 있게 설정 */
+  position: absolute;
+
+  /* 화면 밖으로 숨김 */
+  left : -100px;
+}
+
+
