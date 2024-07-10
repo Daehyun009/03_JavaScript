@@ -4,11 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UI구현</title>
+  <title>UI구현_김대현</title>
   <link rel="stylesheet" href="UI구현.css">
 </head>
 
 <body>
+  <h1>UI구현_김대현</h1>
+
+  <section>
+    <table>
+      <tr>
+        <th>너비 : </th>
+        <td colspan="2">
+          <input type="number" class="short1" id="width"> px
+        </td>
+
+        <th>높이 : </th>
+        <td colspan="2">
+          <input type="number" class="short1" id="height"> px
+        </td>
+
+      </tr>
+
+      <tr>
+        <th>글자크기 : </th>
+        <td colspan="2">
+          <input type="number" class="short2" id="f-size"> px
+        </td>
+
+        <th>굵기 : </th>
+        <td>
+          보통 <input type="radio" name="bold" value="normal">
+          굵게 <input type="radio" name="bold" value="bold">
+        </td>
+      </tr>
+
+      <tr>
+        <th>글자색 : </th>
+        <td colspan="2">
+          <input type="text" class="long" id="color">
+        </td>
+        <th>배경색 : </th>
+        <td colspan="2">
+          <input type="text" class="long" id="backgroundColor">
+        </td>
+      </tr>
+
+      <tr>
+        <th>가로정렬 : </th>
+        <td colspan="5">
+          왼쪽 <input type="radio" name="row" value="start">
+          가운데 <input type="radio" name="row" value="center">
+          오른쪽 <input type="radio" name="row" value="end">
+        </td>
+      </tr>
+
+      <tr>
+        <th>세로정렬 : </th>
+        <td colspan="5">
+          위 <input type="radio" name="col" value="start">
+          가운데 <input type="radio" name="col" value="center">
+          아래 <input type="radio" name="col" value="end">
+        </td>
+      </tr>
+
+      <tr>
+        <th>출력 문자열 : </th>
+        <td colspan="5">
+          <input type="text" class="long" id="input">
+        </td>
+      </tr>
+    </table>
+  </section>
+
+
+  <section>
+    <button onclick="apply()">적용하기</button>
+  </section>
+
+  <br>
+
+  <section>
+    <div class="container-1">
+      
+    </div>
+
+  </section>
+
+
+
 
   <script src="UI구현.js"></script>
 </body>
